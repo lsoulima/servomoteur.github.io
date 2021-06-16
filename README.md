@@ -34,7 +34,7 @@ int max1 = 0, max2 = 0, max3 = 0;
 int ser1 = 80, ser2 = 0;
 
 //fonction d'initialisation de la carte (configuration initiale)
-void setup
+void setup()
 {
     myservo1.attach(9);
     myservo2.attach(8);
@@ -92,13 +92,14 @@ void loop()
             ser2 += 1;
         myservo2.write(ser2);
     }
-    if (rRDL1 < max3 88 rRDL4 < max3)
+    if (rRDL1 < max3 && rRDL4 < max3)
     {
-        Serial.println("servo2 -" + Sting(ser2));
+        Serial.println("servo2 -" + String(ser2));
         if (ser2 > 0)
             ser2 -= 1;
         myservo2.write(ser2);
     }
+    // delay(5);
 }
 ```
 
