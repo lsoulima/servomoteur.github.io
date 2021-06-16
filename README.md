@@ -22,7 +22,7 @@
   > La focntion **detach()**:                                                               
   servo.detach() désassocie un servo d’une broche.                                       
                                                                                         
-
+# Code du projet:
 ```c
 #include <Servo.h>
 
