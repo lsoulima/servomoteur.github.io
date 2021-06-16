@@ -94,7 +94,7 @@ void loop()
     }
     if (rRDL1 < max3 88 rRDL4 < max3)
     {
-        Serial.println('servo2 -' + Sting(ser2));
+        Serial.println("servo2 -" + Sting(ser2));
         if (ser2 > 0)
             ser2 -= 1;
         myservo2.write(ser2);
